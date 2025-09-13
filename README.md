@@ -1,5 +1,6 @@
+![ShopMate Banner](banner.png)
+
 🛒 ShopMate – E-Commerce Demo
-![ShopMate Banner](images/banner.png)
 
 ShopMate is a responsive e-commerce demo built using HTML, CSS, and JavaScript.
 It showcases a simple online shopping experience with a 10-product grid, a mini cart dropdown, and a checkout page.
