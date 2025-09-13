@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - ShopMate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopMate</h1>
+    <a href="index.html" class="back-link">← Continue Shopping</a>
+  </header>
+
+  <main class="checkout-page">
+    <h2>Checkout</h2>
+    <div id="checkout-items"></div>
+    <p class="checkout-total">Total: $<span id="checkout-total">0.00</span></p>
+    <button id="place-order" class="checkout-btn">Place Order</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShopMate. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const checkoutItemsDiv = document.getElementById("checkout-items");
+    const checkoutTotalEl = document.getElementById("checkout-total");
+    const placeOrderBtn = document.getElementById("place-order");
+
+    const savedCart = JSON.parse(localStorage.getItem("cartData"));
+    if (savedCart && savedCart.items) {
+      let total = 0;
+      checkoutItemsDiv.innerHTML = "<ul>";
+      for (const id in savedCart.items) {
+        const item = savedCart.items[id];
+        total += item.price * item.quantity;
+        checkoutItemsDiv.innerHTML += `<li>${item.name} x${item.quantity} — $${(item.price * item.quantity).toFixed(2)}</li>`;
+      }
+      checkoutItemsDiv.innerHTML += "</ul>";
+      checkoutTotalEl.textContent = total.toFixed(2);
+    } else {
+      checkoutItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+    }
+
+    placeOrderBtn.addEventListener("click", () => {
+      alert("Thank you! Your order has been placed 🎉");
+      localStorage.removeItem("cartData");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

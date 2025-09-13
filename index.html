@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopMate - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopMate</h1>
+    <button id="cart-btn" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+    <div id="mini-cart" class="mini-cart">
+      <h3>Shopping Cart</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="mini-cart-total">0.00</span></p>
+      <button id="clear-cart" class="clear-btn">Clear Cart</button>
+      <a href="checkout.html" class="checkout-btn">Checkout</a>
+    </div>
+  </header>
+
+  <main class="products-grid">
+  <!-- Product 1 -->
+  <div class="product-card" data-id="1" data-name="Wireless Headphones" data-price="59.99">
+    <img src="images/download.jpeg" alt="Wireless Headphones"/>
+    <h2>Wireless Headphones</h2>
+    <p>$59.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card" data-id="2" data-name="Smart Watch" data-price="99.99">
+    <img src="images/watch.jpeg" alt="Smart Watch"/>
+    <h2>Smart Watch</h2>
+    <p>$99.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card" data-id="3" data-name="Bluetooth Speaker" data-price="39.99">
+    <img src="images/speaker.jpeg" alt="Bluetooth Speaker"/>
+    <h2>Bluetooth Speaker</h2>
+    <p>$39.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card" data-id="4" data-name="Laptop Backpack" data-price="49.99">
+    <img src="images/bags.jpeg" alt="Laptop Backpack"/>
+    <h2>Laptop Backpack</h2>
+    <p>$49.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-card" data-id="5" data-name="Wireless Mouse" data-price="19.99">
+    <img src="images/mouse.jpeg" alt="Wireless Mouse"/>
+    <h2>Wireless Mouse</h2>
+    <p>$19.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product-card" data-id="6" data-name="Mechanical Keyboard" data-price="79.99">
+    <img src="images/keyboard.jpeg" alt="Mechanical Keyboard"/>
+    <h2>Mechanical Keyboard</h2>
+    <p>$79.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product-card" data-id="7" data-name="Gaming Chair" data-price="199.99">
+    <img src="images/chair.jpeg" alt="Gaming Chair"/>
+    <h2>Gaming Chair</h2>
+    <p>$199.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 8 -->
+  <div class="product-card" data-id="8" data-name="4K Monitor" data-price="299.99">
+    <img src="images/monitor.jpeg" alt="4K Monitor"/>
+    <h2>4K Monitor</h2>
+    <p>$299.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product-card" data-id="9" data-name="External SSD" data-price="89.99">
+    <img src="images/ssd.jpeg" alt="External SSD"/>
+    <h2>External SSD</h2>
+    <p>$89.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="product-card" data-id="10" data-name="Noise Cancelling Earbuds" data-price="129.99">
+    <img src="images/buds.jpeg" alt="Noise Cancelling Earbuds"/>
+    <h2>Noise Cancelling Earbuds</h2>
+    <p>$129.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 ShopMate. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
