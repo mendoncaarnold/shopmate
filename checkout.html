@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMate - Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <a href="index.html">⬅ Back to Shop</a>
+  </header>
+
+  <main>
+    <h2>Your Cart</h2>
+    <ul id="checkout-cart-items"></ul>
+    <p>Total: $<span id="checkout-total">0.00</span></p>
+
+    <h2>Shipping Info</h2>
+    <form id="checkout-form">
+      <label>Name: <input type="text" required></label><br>
+      <label>Address: <input type="text" required></label><br>
+      <label>Email: <input type="email" required></label><br>
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

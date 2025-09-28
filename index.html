@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMate - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 ShopMate</h1>
+    <div class="cart-container">
+      <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      <div id="mini-cart" class="mini-cart hidden">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <a href="checkout.html" class="checkout-btn">Go to Checkout</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="images/download.jpeg" alt="Wireless Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>$59.99</p>
+        <button onclick="addToCart(1, 'Wireless Headphones', 59.99, 'images/download.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="images/watch.jpeg" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>$89.99</p>
+        <button onclick="addToCart(2, 'Smart Watch', 89.99, 'images/watch.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="images/speaker.jpeg" alt="Bluetooth Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart(3, 'Bluetooth Speaker', 39.99, 'images/speaker.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="images/bags.jpeg" alt="Laptop Bag">
+        <h3>Laptop Bag</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart(4, 'Laptop Bag', 49.99, 'images/bags.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="images/mouse.jpeg" alt="Wireless Mouse">
+        <h3>Wireless Mouse</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart(5, 'Wireless Mouse', 19.99, 'images/mouse.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 6 -->
+      <div class="product">
+        <img src="images/keyboard.jpeg" alt="Keyboard">
+        <h3>Keyboard</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart(6, 'Keyboard', 29.99, 'images/keyboard.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 7 -->
+      <div class="product">
+        <img src="images/chair.jpeg" alt="Gaming Chair">
+        <h3>Gaming Chair</h3>
+        <p>$199.99</p>
+        <button onclick="addToCart(7, 'Gaming Chair', 199.99, 'images/chair.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 8 -->
+      <div class="product">
+        <img src="images/monitor.jpeg" alt="4K Monitor">
+        <h3>4K Monitor</h3>
+        <p>$299.99</p>
+        <button onclick="addToCart(8, '4K Monitor', 299.99, 'images/monitor.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 9 -->
+      <div class="product">
+        <img src="images/ssd.jpeg" alt="External SSD">
+        <h3>External SSD</h3>
+        <p>$129.99</p>
+        <button onclick="addToCart(9, 'External SSD', 129.99, 'images/ssd.jpeg')">Add to Cart</button>
+      </div>
+      <!-- Product 10 -->
+      <div class="product">
+        <img src="images/buds.jpeg" alt="Noise Cancelling Earbuds">
+        <h3>Noise Cancelling Earbuds</h3>
+        <p>$99.99</p>
+        <button onclick="addToCart(10, 'Noise Cancelling Earbuds', 99.99, 'images/buds.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
